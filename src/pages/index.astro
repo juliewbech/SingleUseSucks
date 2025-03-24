@@ -1,100 +1,104 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import tailwind from "../styles/tailwind.css";
-import Button from '../components/Button.astro';
-import Button2 from '../components/Button2.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Button2 from "../components/Button2.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 
-<!DOCTYPE html>
-<html lang="en">    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SingleUseSucks</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header></header>
 
-<MainLayout title="SingleUseSucks">
-<main>
+    <MainLayout title="SingleUseSucks">
+      <main>
+        <!-- Hero Unit Section -->
 
-<!-- Hero Unit Section -->
-<section class="w-full">
-  <div class="container mx-auto h-full flex items-center justify-center">
-    <h1 class="text-5xl font-bold">Hero Unit</h1>
-  </div>
-</section>
+        <section
+          class="w-full h-screen bg-[url('/hero.jpg')] bg-cover bg-center"
+        >
+          <div
+            class="container mx-auto h-full flex items-center justify-center"
+          >
+            <h1 class="text-5xl font-bold text-pink-700">#SingleUseSucks</h1>
+          </div>
+        </section>
 
-  <!--Section 1 -->
-  <section class="mt-10">
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold">Section 1</h3>
-    </div>
-    </article>
-  
-     <!--Section 2 -->
-  <section class="mt-10">
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold">Section 2</h3>
-    </div>
-    </article>
-  
-     <!--Section 3 -->
-  <section class="mt-10">
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold">Section 3</h3>
-    </div>
-    </article>
-  
-     <!--Section 4 -->
-  <section class="mt-10">
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold">Section 4</h3>
-    </div>
-    </article>
-  
-     <!--Section 5 -->
-  <section class="mt-10">
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold">Section 5</h3>
-    </div>
-    </article>
-  
-  <!--Section 6 -->
-  <section class="mt-10">
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold">Section 6</h3>
-    </div>
-    </article>
-  
-     <!--Section 7 -->
-  <section class="mt-10">
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold">Section 7</h3>
-    </div>
-    </article>
-  
-     <!--Section 8 -->
-  <section class="mt-10">
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold">Section 8</h3>
-    </div>
-    </article>
-  
+        <section class="bg-[url('/body.jpg')] bg-cover bg-center bg-no-repeat">
+          <!-- Section 1 -->
+          <section class="mt-10">
+            <article class="flex justify-center items-center min-h-screen px-4">
+              <div class="prose prose-lg max-w-md md:max-w-2xl">
+                <h3 class="text-5xl font-bold text-white">Section 1</h3>
+              </div>
+            </article>
+          </section>
 
-  </section>
+          <!-- Section 2 -->
+          <section class="mt-10">
+            <article class="flex justify-center items-center min-h-screen px-4">
+              <div class="prose prose-lg max-w-md md:max-w-2xl">
+                <h3 class="text-5xl font-bold text-white">Section 2</h3>
+              </div>
+            </article>
+          </section>
 
-</main>
-</MainLayout>
+          <!-- Section 3 -->
+          <section class="mt-10">
+            <article class="flex justify-center items-center min-h-screen px-4">
+              <div class="prose prose-lg max-w-md md:max-w-2xl">
+                <h3 class="text-5xl font-bold text-white">Section 3</h3>
+              </div>
+            </article>
+          </section>
+
+          <!-- Section 4 -->
+          <section class="mt-10">
+            <article class="flex justify-center items-center min-h-screen px-4">
+              <div class="prose prose-lg max-w-md md:max-w-2xl">
+                <h3 class="text-5xl font-bold text-white">Section 4</h3>
+              </div>
+            </article>
+          </section>
+
+          <!-- Section 5 -->
+          <section class="mt-10">
+            <article class="flex justify-center items-center min-h-screen px-4">
+              <div class="prose prose-lg max-w-md md:max-w-2xl">
+                <h3 class="text-5xl font-bold text-white">Section 5</h3>
+              </div>
+            </article>
+          </section>
+        </section>
+        <section class="bg-[url('/bund.jpg')] bg-cover bg-center bg-no-repeat">
+          <!-- Section 6 -->
+          <section class="mt-10">
+            <article class="flex justify-center items-center min-h-screen px-4">
+              <div class="prose prose-lg max-w-md md:max-w-2xl">
+                <h3 class="text-5xl font-bold text-white">Section 6</h3>
+              </div>
+            </article>
+          </section>
+
+          <!-- Section 7 -->
+          <section class="mt-10">
+            <article class="flex justify-center items-center min-h-screen px-4">
+              <div class="prose prose-lg max-w-md md:max-w-2xl">
+                <h3 class="text-5xl font-bold text-white">Section 7</h3>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main></MainLayout
+    ></body
+  >
+</html>
