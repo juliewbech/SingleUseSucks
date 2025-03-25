@@ -1,0 +1,78 @@
+---
+import Button from "./Button.astro";
+---
+
+<div class="p-8 max-w-xl mx-auto bg-black shadow-lg rounded-lg">
+  <h2 class="flex justify-center text-2xl text-[#EB3858] font-semibold mb-6">
+    Tilmeld dig vores nyhedsbrev
+  </h2>
+
+  <form>
+    <!-- Fornavn og Etternavn -->
+    <div class="mb-6 flex gap-4">
+      <div class="w-full">
+        <label
+          for="first-name"
+          class="block text-sm font-medium text-white mb-2"
+        >
+          Fornavn
+        </label>
+        <input
+          id="first-name"
+          type="text"
+          name="first-name"
+          placeholder="Indtast fornavn"
+          class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+      <div class="w-full">
+        <label
+          for="last-name"
+          class="block text-sm font-medium text-white mb-2"
+        >
+          Efternavn
+        </label>
+        <input
+          id="last-name"
+          type="text"
+          name="last-name"
+          placeholder="Indtast efternavn"
+          class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- E-mail input -->
+    <div class="mb-6">
+      <label for="email" class="block text-sm font-medium text-white mb-2">
+        E-mail
+      </label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Indtast din e-mail"
+        class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        required
+      />
+    </div>
+
+    <!-- Checkbox -->
+    <div class="mb-6 flex items-center">
+      <input
+        id="newsletter-checkbox"
+        type="checkbox"
+        name="newsletter"
+        class="h-5 w-5 text-[#EB3858] border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500"
+        required
+      />
+      <label for="newsletter-checkbox" class="text-white ml-2 text-sm">
+        Jeg ønsker at modtage nyhedsbreve.
+      </label>
+    </div>
+
+    <!-- Submit Button -->
+  </form>
+</div>
