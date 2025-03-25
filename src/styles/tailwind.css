@@ -30,6 +30,11 @@
       transform: rotate(5deg);
     }
   }
+
+  --color-plasticpink: #eb3858;
+  --color-darkblue: #131927;
+  --color-babyblue: #c0e5fb;
+  --color-eggs: #f6f5f1;
 }
 
 @layer components {
