@@ -1,16 +1,17 @@
 ---
 import Button from "./Button.astro";
+import Button2 from "./Button2.astro";
 ---
 
 <div
   id="plasticChangeDonationsAmountOptions"
-  class="plastic-change-donations__amounts p-8 max-w-xl mx-auto bg-black shadow-lg rounded-lg"
+  class="plastic-change-donations__amounts p-8 max-w-xl mx-auto bg-darkblue shadow-lg rounded-lg"
 >
-  <h2 class="flex justify-center text-2xl text-[#EB3858] font-semibold mb-6">
+  <h2 class="flex justify-center text-2xl text-plasticpink poppins-semibold mb-6">
     Støt os
   </h2>
 
-  <div class="mb-6">
+  <div class="mb-6 poppins-regular">
     <!-- Betalingstype -->
     <div
       class="flex items-center justify-center gap-4 mb-4"
@@ -21,7 +22,7 @@ import Button from "./Button.astro";
         type="radio"
         name="pre_paymentType"
         value="Single"
-        class="hidden"
+        class="hidden "
         checked
       />
       <label
@@ -41,7 +42,7 @@ import Button from "./Button.astro";
       />
       <label
         for="option-recurring"
-        class="w-full text-center p-4 cursor-pointer rounded-full whitespace-nowrap"
+        class="w-full text-center p-4 cursor-pointer text-darkblue rounded-full whitespace-nowrap"
         data-default-color="#C0E5FB"
       >
         Støt månedligt
@@ -60,7 +61,7 @@ import Button from "./Button.astro";
         />
         <label
           for="donation-500"
-          class="w-full text-center p-2 cursor-pointer rounded-full"
+          class="w-full text-center p-2 cursor-pointer text-darkblue rounded-full"
           data-default-color="#C0E5FB"
         >
           500 kr.
@@ -75,7 +76,7 @@ import Button from "./Button.astro";
         />
         <label
           for="donation-250"
-          class="w-full text-center p-2 cursor-pointer rounded-full"
+          class="w-full text-center p-2 text-darkblue cursor-pointer rounded-full"
           data-default-color="#C0E5FB"
         >
           250 kr.
@@ -90,7 +91,7 @@ import Button from "./Button.astro";
         />
         <label
           for="donation-125"
-          class="w-full text-center p-2 cursor-pointer rounded-full"
+          class="w-full text-center text-darkblue p-2 cursor-pointer rounded-full"
           data-default-color="#C0E5FB"
         >
           125 kr.
@@ -100,7 +101,7 @@ import Button from "./Button.astro";
 
     <!-- Andet beløb -->
     <div class="mb-6">
-      <label for="other-amount" class="block text-sm font-medium mb-2"
+      <label for="other-amount" class="block text-sm font-medium mb-2 text-eggs"
         >Andet beløb</label
       >
       <div class="flex items-center gap-2">
@@ -111,13 +112,13 @@ import Button from "./Button.astro";
           min="20"
           step="1"
           placeholder="Indtast beløb"
-          class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-plasticpink"
         />
-        <span class="text-white">kr.</span>
+        <span class="text-eggs">kr.</span>
       </div>
     </div>
 
-    <Button class="rounded-full" />
+    <Button2 variant="secondary", size="medium">Støt nu</Button2>
   </div>
 </div>
 
