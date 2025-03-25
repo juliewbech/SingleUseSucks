@@ -1,50 +1,49 @@
 ---
-import Button from "../components/Button.astro";
+import Button2 from "../components/Button2.astro";
+import Link from "../components/Link.astro";
 ---
-<footer>
-    <div class="container mx-auto text-center">
-        <div class="mb-4">
-            <p>&copy; 2025</p>
-        </div>
-        <div class="mb-4">
-            <p>Contact: <a href="mailto:contact@example.com" class="underline">contact@example.com</a></p>
-        </div>
-        <div class="flex justify-center space-x-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="/path/to/facebook-icon.png" alt="Facebook" class="h-6">
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="/path/to/twitter-icon.png" alt="Twitter" class="h-6">
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="/path/to/instagram-icon.png" alt="Instagram" class="h-6">
-            </a>
-        </div>
-    </div>
-</footer>
 
-<section class="bg-blue-950 grid grid-cols-5">
+<section class="bg-blue-950 grid grid-cols-5 p-8 text-white poppins-regular text-sm">
     <div>
-        <Button></Button>
-        <p>
-            Mail. info@plasticchange.org
-        </p>
-        <p>
-            Tlf. +45 42 66 72 46
-        </p>
-        <p>
-            Telefontid. Mandag – Fredag,
-    10:00 – 15:00
-        </p>
-        <p>
-            Website af Savage Studio
-        </p>
-        <p>
-            © 2025 Plastic Change
-        </p>
+        <Button2 class="pb-3"></Button2>
+        <p>Mail.</p>
+        <Link href="#" variant="primary" size="large">info@plasticchange.org</Link>
+        <p>Tlf.</p>
+        <Link href="#" variant="primary" size="large"> +45 42 66 72 46</Link>
+        <p>Telefontid. Mandag – Fredag, 10:00 – 15:00</p>
+        <p>Website af Savage Studio</p>
+        <p>© 2025 Plastic Change</p>
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div>
+        <p class="poppins-medium pb-3">Om os</p>
+      <Link href="#" variant="secondary" size="large">Forening Plastic Change</Link>
+      <Link href="#" variant="secondary" size="large">Sådan arbejder vi</Link>
+      <Link href="#" variant="secondary" size="large">Regnskab & vedtægter</Link>
+      <Link href="#" variant="secondary" size="large">Presse</Link>
+      <Link href="#" variant="secondary" size="large">Kontakt os</Link>
+    </div>
+    <div>
+<p class="poppins-medium pb-3"> Støt vores arbejde</p>
+       <Link href="#" variant="secondary" size="large">Giv et bidrag</Link>
+       <Link href="#" variant="secondary" size="large">Bliv medlem</Link>
+       <Link href="#" variant="secondary" size="large">Lav et testamente</Link>
+       <Link href="#" variant="secondary" size="large">Støt som virksomhed</Link>
+    </div>
+    <div>
+        <p class="poppins-medium pb-3">Praktisk information</p>
+       <p>CVR. 35778985</p>
+       <p>Konto. 8411 0002039618</p>
+<p>MobilePay. 304961</p>
+<p>SWIFT. FAELDKK1</p>
+<p>IBAN. DK3584110002039618</p>
+<Link href="#" variant="secondary" size="large">Privatlivspolitik</Link>
+<Link href="#" variant="secondary" size="large">Betalingspolitik</Link>
+    </div>
+    <div>
+        <a href="">Facebook</a>
+        <a href="">X</a>
+        <a href="">Linkedin</a>
+        <a href="">YouTube</a>
+        <a href="">Instagram</a>
+    </div>
     </section>
