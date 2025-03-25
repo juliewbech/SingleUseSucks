@@ -1,9 +1,9 @@
 ---
-import Button from "./Button.astro";
+import Button2 from "./Button2.astro";
 ---
 
-<div class="p-8 max-w-xl mx-auto bg-black shadow-lg rounded-lg">
-  <h2 class="flex justify-center text-2xl text-[#EB3858] font-semibold mb-6">
+<div class="p-8 max-w-xl mx-auto bg-darkblue shadow-lg rounded-lg">
+  <h2 class="flex justify-center text-2xl text-plasticpink poppins-semibold mb-6">
     Tilmeld dig vores nyhedsbrev
   </h2>
 
@@ -13,7 +13,7 @@ import Button from "./Button.astro";
       <div class="w-full">
         <label
           for="first-name"
-          class="block text-sm font-medium text-white mb-2"
+          class="block text-sm poppins-medium text-eggs mb-2"
         >
           Fornavn
         </label>
@@ -22,14 +22,14 @@ import Button from "./Button.astro";
           type="text"
           name="first-name"
           placeholder="Indtast fornavn"
-          class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="w-full p-4 border poppins-regular border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-plasticpink"
           required
         />
       </div>
       <div class="w-full">
         <label
           for="last-name"
-          class="block text-sm font-medium text-white mb-2"
+          class="block text-sm poppins-medium text-eggs mb-2"
         >
           Efternavn
         </label>
@@ -38,7 +38,7 @@ import Button from "./Button.astro";
           type="text"
           name="last-name"
           placeholder="Indtast efternavn"
-          class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="w-full p-4 border poppins-regular border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-plasticpink"
           required
         />
       </div>
@@ -46,7 +46,7 @@ import Button from "./Button.astro";
 
     <!-- E-mail input -->
     <div class="mb-6">
-      <label for="email" class="block text-sm font-medium text-white mb-2">
+      <label for="email" class="block text-sm poppins-medium text-eggs mb-2">
         E-mail
       </label>
       <input
@@ -54,7 +54,7 @@ import Button from "./Button.astro";
         type="email"
         name="email"
         placeholder="Indtast din e-mail"
-        class="w-full p-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        class="w-full p-4 border poppins-regular border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-plasticpink"
         required
       />
     </div>
@@ -65,14 +65,15 @@ import Button from "./Button.astro";
         id="newsletter-checkbox"
         type="checkbox"
         name="newsletter"
-        class="h-5 w-5 text-[#EB3858] border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500"
+        class="h-5 w-5 text-[#EB3858] border-gray-300 rounded-full focus:ring-2 focus:ring-plasticpink"
         required
       />
-      <label for="newsletter-checkbox" class="text-white ml-2 text-sm">
-        Jeg ønsker at modtage nyhedsbreve.
+      <label for="newsletter-checkbox" class="text-eggs ml-2 text-xs poppins-extralight">
+        Jeg giver mit samtykke til, at Plastic Change må opbevare og behandle mine oplysninger til brug i forbindelse med min støtte. Læs mere om dette samtykke i vores privatlivspolitik.
       </label>
     </div>
 
     <!-- Submit Button -->
+     <Button2 variant="secondary", size="medium">Tilmeld nyhedsbrev</Button2>
   </form>
 </div>
