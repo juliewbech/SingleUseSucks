@@ -1,22 +1,21 @@
 ---
 import Link from '../components/Link.astro';
-
+import Button2 from '../components/Button2.astro';
 ---
 
 
-<div x-data="{ showmenu: false}" class="p-4  lg:static w-full">
+<div x-data="{ showmenu: false}" class="p-4  lg:static w-full bg-darkblue">
     <div id="navbar" class="flex flex-row justify-between">
         <div id="logo" class="">
             <a href="#">
-                <img src="https://i.imgur.com/E01BW5h.jpeg" alt="Logo">
+                <Button2 variant="primary", size="medium">plastic change</Button2>
             </a>
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
             <ul class="flex flex-row gap-8">
-                <li class=""><Link href="#" variant="secondary" size="large">Om 110</Link></li>
+                <!-- <li class=""><Link href="#" variant="secondary" size="large">Om 110</Link></li>
                 <li class=""><Link href="#" variant="secondary" size="large">Galleri</Link></li>
-                <li class=""><Link href="#" variant="secondary" size="large">Shop</Link></li>
-                <li><a href="#"><img src="https://i.imgur.com/pYpfAk3.jpeg" alt=""></a></li>
+                <li class=""><Link href="#" variant="secondary" size="large">Shop</Link></li> -->
             </ul>
         </nav>
         <button id="burgermenu" class="lg:hidden text-2xl relative inline-block text-black after:block after:w-0 after:h-[2px] after:bg-red-800 after:transition-all after:duration-300 hover:after:w-full" x-on:click="showmenu = ! showmenu">Menu</button>
