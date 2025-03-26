@@ -279,7 +279,7 @@ import Brev from "../components/Brev.astro";
                     height="348"
                     loading="lazy"
                     decoding="async"
-                    class="animate__animated animate__slideInRight animate__slower"
+                    class="fotoview2"
                   />
                 </div>
                 <div class="col-start-11 col-span-6 row-start-1 row-span-3">
@@ -507,4 +507,13 @@ import Brev from "../components/Brev.astro";
 <script>
   import { animate, stagger, inView, scroll } from "motion";
   scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+
+  inView( ".fotoinview" , () =>{
+	animate( ".fotoinview", { x: [-2000, 0 ] }, { duration: 3 })
+	})
+
+	inView( ".fotoinview2" , () =>{
+	animate( ".fotoinview2", { x: [2000, 0 ] }, { duration: 3 })
+	})
+
 </script>
