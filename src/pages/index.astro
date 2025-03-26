@@ -18,30 +18,28 @@ import Brev from "../components/Brev.astro";
     <title>SingleUseSucks</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header></header>
 
-    <MainLayout title="SingleUseSucks">
-      <div
-        class="progress-bar z-20 h-4 fixed w-full bg-gradient-to-r from-plasticpink to-babyblue left-0 origin-top-left top-0 right-0"
-      >
-      </div>
-      <main>
-        <!-- Hero Unit Section -->
+  <MainLayout title="SingleUseSucks">
+    <div
+      class="progress-bar z-20 h-4 fixed w-full bg-gradient-to-r from-plasticpink to-babyblue left-0 origin-top-left top-0 right-0"
+    >
+    </div>
 
-        <section
-          class="w-full h-screen bg-[url('/hero.jpg')] bg-cover bg-center"
+    <!-- Hero Unit Section -->
+    <div id="sticky-btn" class="sticky top-1/4 right-4 z-50 w-max ml-auto">
+      <Button2 variant="secondary" , size="medium">Støt nu</Button2>
+    </div>
+    <section
+      class="-mt-15 w-full h-screen bg-[url('/hero.jpg')] bg-cover bg-center"
+    >
+      <div class="container mx-auto h-full flex items-center justify-center">
+        <h1
+          class="text-8xl font-bold text-plasticpink protest-guerrilla-regular"
         >
-          <div
-            class="container mx-auto h-full flex items-center justify-center"
-          >
-            <h1
-              class="text-8xl font-bold text-plasticpink protest-guerrilla-regular"
-            >
-              #SingleUseSucks
-            </h1>
-          </div>
-        </section>
+          #SingleUseSucks
+        </h1>
+      </div>
+    </section>
 
         <div class="relative h-200 -mt-100 z-10 pointer-events-none">
           <div
@@ -128,7 +126,7 @@ import Brev from "../components/Brev.astro";
                     height="348"
                     loading="lazy"
                     decoding="async"
-                    class=" "
+                    class=""
                   />
                 </div>
                 <div class="col-start-12 col-span-3 row-start-2 row-span-3">
@@ -196,7 +194,7 @@ import Brev from "../components/Brev.astro";
                     height="348"
                     loading="lazy"
                     decoding="async"
-                    class="z-30"
+                    class=""
                   />
                 </div>
                 <div class="col-start-12 col-span-3 row-start-2 row-span-3">
@@ -218,7 +216,7 @@ import Brev from "../components/Brev.astro";
                     height="348"
                     loading="lazy"
                     decoding="async"
-                    class="animate__animated animate__headShake animate__infinite animate__slower z-20"
+                    class="animate__animated animate__headShake animate__infinite animate__slower"
                   />
                 </div>
               </div>
@@ -281,7 +279,7 @@ import Brev from "../components/Brev.astro";
                     height="348"
                     loading="lazy"
                     decoding="async"
-                    class="fotoinview2"
+                    class="animate__animated animate__slideInRight animate__slower"
                   />
                 </div>
                 <div class="col-start-11 col-span-6 row-start-1 row-span-3">
@@ -310,221 +308,203 @@ import Brev from "../components/Brev.astro";
             </div>
           </section>
 
-          <!-- Section 4 -->
-          <section id="section4" class="hero grid lg:grid-cols-8 gap-8">
-            <div class="col-span-8">
-              <div
-                class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
-              >
-                <div class="col-start-1 col-span-12 row-start-1 row-span-12">
-                </div>
-                <div
-                  class="col-start-7 col-span-4 row-start-4 row-span-1 text-plasticpink"
-                >
-                  <h2 class="text-4xl pb-4 poppins-semibold">
-                    Vidste du at...
-                  </h2>
-                  <img
-                    src="../../graf.svg"
-                    alt="dato"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <div class="col-start-1 col-span-5 row-start-4 row-span-1">
-                  <img
-                    src="../../koral.svg"
-                    alt="dato"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <!-- <div class="col-start-1 col-span-7 row-start-1 row-span-8">
-                  <img
-                    src="../../plasticbottle.svg"
-                    alt="dato"
-                    width="610"
-                    height="612"
-                    loading="lazy"
-                    decoding="async"
-                    class="animate__animated animate__swing animate__infinite animate__slower"
-                  />
-                </div> -->
-                <div class="col-start-11 col-span-6 row-start-1 row-span-3">
-                  <img
-                    src="../../koral4.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-
-            <!-- Section 5 -->
-            <section id="section5" class="hero grid lg:grid-cols-8 gap-8">
-              <div class="col-span-8">
-                <div
-                  class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
-                >
-                  <div class="col-start-4 col-span-4 row-start-1 row-span-1">
-                    <img
-                      src="../../plasticbag.svg"
-                      alt="dato"
-                      width="610"
-                      height="612"
-                      loading="lazy"
-                      decoding="async"
-                      class="animate_animated animate__slideInUp animate_slower"
-                    />
-                  </div>
-                  <div class="col-start-1 col-span-4 row-start-7 row-span-1">
-                    <img
-                      src="../../trash.svg"
-                      alt="dato"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <!-- <div class="col-start-3 col-span-2 row-start-1 row-span-8">
-                    <img
-                      src="../../plasticbottle.svg"
-                      alt="dato"
-                      width="610"
-                      height="612"
-                      loading="lazy"
-                      decoding="async"
-                      class="animate__animated animate__swing animate__infinite animate__slower"
-                    />
-                  </div> -->
-                  <div class="col-start-9 col-span-4 row-start-2 row-span-5">
-                    <img
-                      src="../../koral5.svg"
-                      alt="Tekst"
-                      width="711"
-                      height="348"
-                      loading="lazy"
-                      decoding="async"
-                      class=""
-                    />
-                  </div>
-                
-                </div>
-              </div>
-            </section>
-        </section>
-
-        <div class="relative h-200 -mt-100 z-10 pointer-events-none">
+      <!-- Section 4 -->
+      <section id="section4" class="hero grid lg:grid-cols-8 gap-8">
+        <div class="col-span-8">
           <div
-            class="absolute inset-0 bg-gradient-to-b from-transparent via-[#076183] to-[#011c2f]"
+            class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
           >
+            <div class="col-start-1 col-span-12 row-start-1 row-span-12"></div>
+            <div
+              class="col-start-7 col-span-4 row-start-4 row-span-1 text-plasticpink"
+            >
+              <h2 class="text-4xl pb-4 poppins-semibold">Vidste du at...</h2>
+              <img
+                src="../../graf.svg"
+                alt="dato"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="col-start-1 col-span-5 row-start-4 row-span-1">
+              <img
+                src="../../koral.svg"
+                alt="dato"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="col-start-1 col-span-7 row-start-1 row-span-8">
+              <img
+                src="../../plasticbottle.svg"
+                alt="dato"
+                width="610"
+                height="612"
+                loading="lazy"
+                decoding="async"
+                class="animate__animated animate__swing animate__infinite animate__slower"
+              />
+            </div>
+            <div class="col-start-11 col-span-6 row-start-1 row-span-3">
+              <img
+                src="../../koral4.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
           </div>
         </div>
-        <section class="bg-[url('/bund.jpg')] bg-cover bg-center bg-no-repeat">
-          <!-- Section 6 -->
-          <section id="section6" class="hero grid lg:grid-cols-8 gap-8">
-            <div class="col-span-8">
-              <div
-                class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
-              >
-                <div class="col-start-1 col-span-12 row-start-1 row-span-12">
-                </div>
-                <div
-                  class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
-                >
-                  <h2 class="text-4xl poppins-semibold">
-                    Hvad gør Plastic Change?
-                  </h2>
-                  <p class="text-1xl poppins-regular pt-5">
-                    Hvis vi vil knække plastikkurven, så må vi mindske
-                    udledningen af plastik i stedet for at satse på at rydde op
-                    i havene. Løsningerne findes både i form af politisk
-                    handling (f.eks. lovgivning om bestemte typer og produkter
-                    af plastik), handling fra industrien (f.eks. ved at skabe
-                    plastikprodukter, der lettere kan genbruges og genanvendes,
-                    og altså ikke er lavet af flere forskellige typer plastik),
-                    og via formidling, hvor vi fortæller forbrugerne om
-                    plastikforurening og dets konsekvenser, og hvad man selv kan
-                    gøre for at mindske plastikforurening.
-                  </p>
-                </div>
-                <div class="col-start-1 col-span-5 row-start-3 row-span-1">
-                  <img
-                    src="../../koral.svg"
-                    alt="dato"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <div class="col-start-10 col-span-1 row-start-6 row-span-2">
-                  <img
-                    src="../../bubble.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-                <div class="col-start-9 col-span-4 row-start-8 row-span-2">
-                  <img
-                    src="../../fish3.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-                <div class="col-start-11 col-span-6 row-start-1 row-span-3">
-                  <img
-                    src="../../koral4.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
+      </section>
 
-          <!-- Section 7 -->
-          <section id="section7" class="grid grid-cols-2 gap-4 p-8">
-            <div>
-              <Form />
+      <!-- Section 5 -->
+      <section id="section5" class="hero grid lg:grid-cols-8 gap-8">
+        <div class="col-span-8">
+          <div
+            class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
+          >
+            <div class="col-start-4 col-span-4 row-start-1 row-span-1">
+              <img
+                src="../../plasticbag.svg"
+                alt="dato"
+                width="610"
+                height="612"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
             </div>
-            <div>
-              <Brev />
+            <div class="col-start-1 col-span-4 row-start-7 row-span-1">
+              <img
+                src="../../trash.svg"
+                alt="dato"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-          </section>
-        </section>
-      </main>
-    </MainLayout></body
-  >
-</html>
+            <div class="col-start-3 col-span-2 row-start-1 row-span-8">
+              <img
+                src="../../plasticbottle.svg"
+                alt="dato"
+                width="610"
+                height="612"
+                loading="lazy"
+                decoding="async"
+                class="animate__animated animate__swing animate__infinite animate__slower"
+              />
+            </div>
+            <div class="col-start-9 col-span-4 row-start-2 row-span-5">
+              <img
+                src="../../koral5.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="relative h-200 -mt-100 z-10 pointer-events-none">
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent via-[#076183] to-[#011c2f]"
+      >
+      </div>
+    </div>
+    <section class="bg-[url('/bund.jpg')] bg-cover bg-center bg-no-repeat">
+      <!-- Section 6 -->
+      <section id="section6" class="hero grid lg:grid-cols-8 gap-8">
+        <div class="col-span-8">
+          <div
+            class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
+          >
+            <div class="col-start-1 col-span-12 row-start-1 row-span-12"></div>
+            <div
+              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
+            >
+              <h2 class="text-4xl poppins-semibold">
+                Hvad gør Plastic Change?
+              </h2>
+              <p class="text-1xl poppins-regular pt-5">
+                Hvis vi vil knække plastikkurven, så må vi mindske udledningen
+                af plastik i stedet for at satse på at rydde op i havene.
+                Løsningerne findes både i form af politisk handling (f.eks.
+                lovgivning om bestemte typer og produkter af plastik), handling
+                fra industrien (f.eks. ved at skabe plastikprodukter, der
+                lettere kan genbruges og genanvendes, og altså ikke er lavet af
+                flere forskellige typer plastik), og via formidling, hvor vi
+                fortæller forbrugerne om plastikforurening og dets konsekvenser,
+                og hvad man selv kan gøre for at mindske plastikforurening.
+              </p>
+            </div>
+            <div class="col-start-1 col-span-5 row-start-3 row-span-1">
+              <img
+                src="../../koral.svg"
+                alt="dato"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="col-start-10 col-span-1 row-start-6 row-span-2">
+              <img
+                src="../../bubble.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
+            <div class="col-start-9 col-span-4 row-start-8 row-span-2">
+              <img
+                src="../../fish3.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
+            <div class="col-start-11 col-span-6 row-start-1 row-span-3">
+              <img
+                src="../../koral4.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section7"
+        class="grid grid-cols-1 gap-8 p-8 place-items-center"
+      >
+        <div id="stop-trigger"></div>
+        <div>
+          <Form />
+        </div>
+        <div>
+          <Brev />
+        </div>
+      </section>
+    </section>
+  </MainLayout>
 
 <script>
   import { animate, stagger, inView, scroll } from "motion";
   scroll(animate(".progress-bar", { scaleX: [0, 1] }));
-
-
-  animate( "body", { opacity: [ 0, 1] }, { duration: 2 })
-
-inView( ".fotoinview" , () =>{
-	animate( ".fotoinview", { x: [-2000, 0 ] }, { duration: 3 })
-	})
-
-	inView( ".fotoinview2" , () =>{
-	animate( ".fotoinview2", { x: [2000, 0 ] }, { duration: 2 })
-	})
 </script>
-
