@@ -41,141 +41,210 @@ import Brev from "../components/Brev.astro";
       </div>
     </section>
 
-        <div class="relative h-200 -mt-100 z-10 pointer-events-none">
+    <div class="relative h-200 -mt-100 z-10 pointer-events-none">
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent via-[#020f14] to-[#0a365b]"
+      >
+      </div>
+    </div>
+    <section class="bg-[url('/body.jpg')] bg-cover bg-center bg-no-repeat">
+      <!-- Plastikflaske -->
+      <div class="sticky top-[10%] z-50">
+        <img
+          src="../../plasticbottle.svg"
+          alt="dato"
+          width="610"
+          height="612"
+          loading="lazy"
+          decoding="async"
+          class="animate__animated animate__swing animate__infinite animate__slower"
+        />
+      </div>
+      <!-- Section 1 -->
+      <section id="section1" class="hero grid lg:grid-cols-8 gap-8">
+        <div class="col-span-8">
           <div
-            class="absolute inset-0 bg-gradient-to-b from-transparent via-[#020f14] to-[#0a365b]"
+            class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
           >
+            <div class="col-start-1 col-span-12 row-start-1 row-span-12"></div>
+            <div
+              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
+            >
+              <h2 class="text-4xl poppins-semibold">
+                Hvad er plastikforurening?
+              </h2>
+              <p class="text-1xl poppins-regular pt-5">
+                Plastikforurening er et alvorligt miljøproblem, hvor
+                plastikaffald ender i naturen, især i havene. Hvert år havner
+                millioner af ton plastik i verdenshavene, hvor det skader
+                havlivet og økosystemerne. Plastik nedbrydes meget langsomt og
+                bliver til mikroplast, som fisk og havdyr kan forveksle med
+                føde. Dette fører til sundhedsproblemer for dyrene og kan også
+                påvirke mennesker gennem fødekæden. Store plastiksamlinger,
+                såsom Stillehavets plastiksuppe, viser omfanget af problemet.
+                Løsninger inkluderer bedre affaldshåndtering, genbrug og
+                reduktion af engangsplastik for at beskytte havmiljøet.
+              </p>
+            </div>
+            <div class="col-start-1 col-span-5 row-start-4 row-span-1">
+              <img
+                src="../../koral.svg"
+                alt="dato"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <!-- <div class="col-start-1 col-span-7 row-start-1 row-span-8">
+                  <img
+                    src="../../plasticbottle.svg"
+                    alt="dato"
+                    width="610"
+                    height="612"
+                    loading="lazy"
+                    decoding="async"
+                    class="animate__animated animate__swing animate__infinite animate__slower"
+                  />
+                </div> -->
+            <div class="col-start-10 col-span-2 row-start-8 row-span-1">
+              <img
+                src="../../plasticbottle2.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
+            <div class="col-start-10 col-span-1 row-start-7 row-span-1">
+              <img
+                src="../../bubble.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
+            <div class="col-start-12 col-span-3 row-start-2 row-span-3">
+              <img
+                src="../../koral1.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
           </div>
         </div>
-        <section class="bg-[url('/body.jpg')] bg-cover bg-center bg-no-repeat">
-          <!-- Plastikflaske -->
-          <div class="sticky top-[10%] z-50">
-            <img
-              src="../../plasticbottle.svg"
-              alt="dato"
-              width="610"
-              height="612"
-              loading="lazy"
-              decoding="async"
-              class="animate__animated animate__swing animate__infinite animate__slower"
-            />
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2" class="hero grid lg:grid-cols-8 gap-8">
+        <div class="col-span-8">
+          <div
+            class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
+          >
+            <div class="col-start-1 col-span-12 row-start-1 row-span-12"></div>
+            <div
+              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
+            >
+              <h2 class="text-4xl poppins-semibold">
+                Hvad er problemet med plastikforurening?
+              </h2>
+              <p class="text-1xl poppins-regular pt-5">
+                Plastikforurening i havet skader dyreliv, ødelægger økosystemer
+                og forurener fødekæden med mikroplast og skadelige kemikalier.
+                Havdyr risikerer kvælning eller forgiftning, og plastikken
+                forsvinder ikke, men ophobes i årtier. Uden handling truer det
+                både natur og menneskers sundhed.
+              </p>
+            </div>
+            <div class="col-start-1 col-span-5 row-start-4 row-span-1">
+              <img
+                src="../../koral.svg"
+                alt="dato"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <!-- <div class="col-start-1 col-span-7 row-start-1 row-span-8">
+                  <img
+                    src="../../plasticbottle.svg"
+                    alt="dato"
+                    width="610"
+                    height="612"
+                    loading="lazy"
+                    decoding="async"
+                    class="animate__animated animate__swing animate__infinite animate__slower"
+                  />
+                </div> -->
+            <div class="col-start-8 col-span-5 row-start-1 row-span-4">
+              <img
+                src="../../plasticbag.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
+            <div class="col-start-12 col-span-3 row-start-2 row-span-3">
+              <img
+                src="../../koral1.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
+            <div class="col-start-10 col-span-2 row-start-6 row-span-1">
+              <img
+                src="../../fish2.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class="animate__animated animate__headShake animate__infinite animate__slower"
+              />
+            </div>
           </div>
-          <!-- Section 1 -->
-          <section id="section1" class="hero grid lg:grid-cols-8 gap-8">
-            <div class="col-span-8">
-              <div
-                class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
-              >
-                <div class="col-start-1 col-span-12 row-start-1 row-span-12">
-                </div>
-                <div
-                  class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
-                >
-                  <h2 class="text-4xl poppins-semibold">
-                    Hvad er plastikforurening?
-                  </h2>
-                  <p class="text-1xl poppins-regular pt-5">
-                    Plastikforurening er et alvorligt miljøproblem, hvor
-                    plastikaffald ender i naturen, især i havene. Hvert år
-                    havner millioner af ton plastik i verdenshavene, hvor det
-                    skader havlivet og økosystemerne. Plastik nedbrydes meget
-                    langsomt og bliver til mikroplast, som fisk og havdyr kan
-                    forveksle med føde. Dette fører til sundhedsproblemer for
-                    dyrene og kan også påvirke mennesker gennem fødekæden. Store
-                    plastiksamlinger, såsom Stillehavets plastiksuppe, viser
-                    omfanget af problemet. Løsninger inkluderer bedre
-                    affaldshåndtering, genbrug og reduktion af engangsplastik
-                    for at beskytte havmiljøet.
-                  </p>
-                </div>
-                <div class="col-start-1 col-span-5 row-start-4 row-span-1">
-                  <img
-                    src="../../koral.svg"
-                    alt="dato"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <!-- <div class="col-start-1 col-span-7 row-start-1 row-span-8">
-                  <img
-                    src="../../plasticbottle.svg"
-                    alt="dato"
-                    width="610"
-                    height="612"
-                    loading="lazy"
-                    decoding="async"
-                    class="animate__animated animate__swing animate__infinite animate__slower"
-                  />
-                </div> -->
-                <div class="col-start-10 col-span-2 row-start-8 row-span-1">
-                  <img
-                    src="../../plasticbottle2.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-                <div class="col-start-10 col-span-1 row-start-7 row-span-1">
-                  <img
-                    src="../../bubble.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-                <div class="col-start-12 col-span-3 row-start-2 row-span-3">
-                  <img
-                    src="../../koral1.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
+        </div>
+      </section>
 
-          <!-- Section 2 -->
-          <section id="section2" class="hero grid lg:grid-cols-8 gap-8">
-            <div class="col-span-8">
-              <div
-                class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
-              >
-                <div class="col-start-1 col-span-12 row-start-1 row-span-12">
-                </div>
-                <div
-                  class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
-                >
-                  <h2 class="text-4xl poppins-semibold">
-                    Hvad er problemet med plastikforurening?
-                  </h2>
-                  <p class="text-1xl poppins-regular pt-5">
-                    Plastikforurening i havet skader dyreliv, ødelægger
-                    økosystemer og forurener fødekæden med mikroplast og
-                    skadelige kemikalier. Havdyr risikerer kvælning eller
-                    forgiftning, og plastikken forsvinder ikke, men ophobes i
-                    årtier. Uden handling truer det både natur og menneskers
-                    sundhed.
-                  </p>
-                </div>
-                <div class="col-start-1 col-span-5 row-start-4 row-span-1">
-                  <img
-                    src="../../koral.svg"
-                    alt="dato"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <!-- <div class="col-start-1 col-span-7 row-start-1 row-span-8">
+      <!-- Section 3 -->
+      <section id="section3" class="hero grid lg:grid-cols-8 gap-8">
+        <div class="col-span-8">
+          <div
+            class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
+          >
+            <div class="col-start-1 col-span-12 row-start-1 row-span-12"></div>
+            <div
+              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
+            >
+              <h2 class="text-4xl poppins-semibold">Hvad kan vi gøre?</h2>
+              <p class="text-1xl poppins-regular pt-5">
+                Brug genanvendelige alternativer, undgå unødig plastik, sortér
+                affald og støt bæredygtige valg. Små ændringer gør en stor
+                forskel.
+              </p>
+            </div>
+            <div class="col-start-1 col-span-5 row-start-3 row-span-1">
+              <img
+                src="../../koral3.svg"
+                alt="dato"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <!-- <div class="col-start-1 col-span-7 row-start-1 row-span-8">
                   <img
                     src="../../plasticbottle.svg"
                     alt="dato"
@@ -186,127 +255,53 @@ import Brev from "../components/Brev.astro";
                     class="animate__animated animate__swing animate__infinite animate__slower"
                   />
                 </div> -->
-                <div class="col-start-8 col-span-5 row-start-1 row-span-4">
-                  <img
-                    src="../../plasticbag.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-                <div class="col-start-12 col-span-3 row-start-2 row-span-3">
-                  <img
-                    src="../../koral1.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-                <div class="col-start-10 col-span-2 row-start-6 row-span-1">
-                  <img
-                    src="../../fish2.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class="animate__animated animate__headShake animate__infinite animate__slower"
-                  />
-                </div>
-              </div>
+            <div class="col-start-5 col-span-2 row-start-8 row-span-8">
+              <img
+                src="../../fish4.svg"
+                alt="dato"
+                width="610"
+                height="612"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
             </div>
-          </section>
-
-          <!-- Section 3 -->
-          <section id="section3" class="hero grid lg:grid-cols-8 gap-8">
-            <div class="col-span-8">
-              <div
-                class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"
-              >
-                <div class="col-start-1 col-span-12 row-start-1 row-span-12">
-                </div>
-                <div
-                  class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
-                >
-                  <h2 class="text-4xl poppins-semibold">Hvad kan vi gøre?</h2>
-                  <p class="text-1xl poppins-regular pt-5">
-                    Brug genanvendelige alternativer, undgå unødig plastik,
-                    sortér affald og støt bæredygtige valg. Små ændringer gør en
-                    stor forskel.
-                  </p>
-                </div>
-                <div class="col-start-1 col-span-5 row-start-3 row-span-1">
-                  <img
-                    src="../../koral3.svg"
-                    alt="dato"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <!-- <div class="col-start-1 col-span-7 row-start-1 row-span-8">
-                  <img
-                    src="../../plasticbottle.svg"
-                    alt="dato"
-                    width="610"
-                    height="612"
-                    loading="lazy"
-                    decoding="async"
-                    class="animate__animated animate__swing animate__infinite animate__slower"
-                  />
-                </div> -->
-                <div class="col-start-5 col-span-2 row-start-8 row-span-8">
-                  <img
-                    src="../../fish4.svg"
-                    alt="dato"
-                    width="610"
-                    height="612"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-                <div class="col-start-10 col-span-3 row-start-8 row-span-2">
-                  <img
-                    src="../../hand.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class="fotoinview2"
-                  />
-                </div>
-                <div class="col-start-11 col-span-6 row-start-1 row-span-3">
-                  <img
-                    src="../../koral4.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                  />
-                </div>
-                <div class="col-start-10 col-span-2 row-start-3 row-span-1">
-                  <img
-                    src="../../metalbottle.svg"
-                    alt="Tekst"
-                    width="711"
-                    height="348"
-                    loading="lazy"
-                    decoding="async"
-                    class="animate__animated animate__zoomIn animate__slower"
-                  />
-                </div>
-              </div>
+            <div class="col-start-10 col-span-3 row-start-8 row-span-2">
+              <img
+                src="../../hand.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class="fotoinview2"
+              />
             </div>
-          </section>
+            <div class="col-start-11 col-span-6 row-start-1 row-span-3">
+              <img
+                src="../../koral4.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class=""
+              />
+            </div>
+            <div class="col-start-10 col-span-2 row-start-3 row-span-1">
+              <img
+                src="../../metalbottle.svg"
+                alt="Tekst"
+                width="711"
+                height="348"
+                loading="lazy"
+                decoding="async"
+                class="animate__animated animate__zoomIn animate__slower"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Section 4 -->
       <section id="section4" class="hero grid lg:grid-cols-8 gap-8">
@@ -504,16 +499,34 @@ import Brev from "../components/Brev.astro";
     </section>
   </MainLayout>
 
-<script>
-  import { animate, stagger, inView, scroll } from "motion";
-  scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+  <script>
+    import { animate, stagger, inView, scroll } from "motion";
+    scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
-  inView( ".fotoinview" , () =>{
-	animate( ".fotoinview", { x: [-2000, 0 ] }, { duration: 3 })
-	})
+    inView(".fotoinview", () => {
+      animate(".fotoinview", { x: [-2000, 0] }, { duration: 3 });
+    });
 
-	inView( ".fotoinview2" , () =>{
-	animate( ".fotoinview2", { x: [2000, 0 ] }, { duration: 3 })
-	})
+    inView(".fotoinview2", () => {
+      animate(".fotoinview2", { x: [2000, 0] }, { duration: 3 });
+    });
 
-</script>
+    const stickyBtn = document.getElementById("sticky-btn");
+    const stopTrigger = document.getElementById("stop-trigger");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            stickyBtn.classList.add("opacity-0", "pointer-events-none");
+          } else {
+            stickyBtn.classList.remove("opacity-0", "pointer-events-none");
+          }
+        });
+      },
+      { threshold: 0.1 },
+    );
+
+    observer.observe(stopTrigger);
+  </script>
+</html>
