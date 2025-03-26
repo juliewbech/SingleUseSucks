@@ -68,7 +68,7 @@ import Brev from "../components/Brev.astro";
           >
             <div class="col-start-1 col-span-12 row-start-1 row-span-12"></div>
             <div
-              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
+              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink fade"
             >
               <h2 class="text-4xl poppins-semibold">
                 Hvad er plastikforurening?
@@ -150,7 +150,7 @@ import Brev from "../components/Brev.astro";
           >
             <div class="col-start-1 col-span-12 row-start-1 row-span-12"></div>
             <div
-              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
+              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink fade2"
             >
               <h2 class="text-4xl poppins-semibold">
                 Hvad er problemet med plastikforurening?
@@ -227,7 +227,7 @@ import Brev from "../components/Brev.astro";
           >
             <div class="col-start-1 col-span-12 row-start-1 row-span-12"></div>
             <div
-              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
+              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink fade"
             >
               <h2 class="text-4xl poppins-semibold">Hvad kan vi gøre?</h2>
               <p class="text-1xl poppins-regular pt-5">
@@ -422,7 +422,7 @@ import Brev from "../components/Brev.astro";
           >
             <div class="col-start-1 col-span-12 row-start-1 row-span-12"></div>
             <div
-              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink"
+              class="col-start-5 col-span-5 row-start-4 row-span-1 text-plasticpink fade2"
             >
               <h2 class="text-4xl poppins-semibold">
                 Hvad gør Plastic Change?
@@ -530,6 +530,26 @@ import Brev from "../components/Brev.astro";
     );
 
     observer.observe(stopTrigger);
+
+    const fade = document.querySelector(".fade");
+
+    inView(fade, () => {
+      fade.classList.add(
+        "animate__animated",
+        "animate__fadeInLeft",
+        "animate__delay-1s",
+      );
+    });
+
+    const fade2 = document.querySelector(".fade2");
+
+    inView(fade2, () => {
+      fade2.classList.add(
+        "animate__animated",
+        "animate__fadeInRight",
+        "animate__delay-1s",
+      );
+    });
   </script>
 
 
