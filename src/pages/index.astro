@@ -128,7 +128,7 @@ import Brev from "../components/Brev.astro";
                     height="348"
                     loading="lazy"
                     decoding="async"
-                    class=""
+                    class=" "
                   />
                 </div>
                 <div class="col-start-12 col-span-3 row-start-2 row-span-3">
@@ -196,7 +196,7 @@ import Brev from "../components/Brev.astro";
                     height="348"
                     loading="lazy"
                     decoding="async"
-                    class=""
+                    class="z-30"
                   />
                 </div>
                 <div class="col-start-12 col-span-3 row-start-2 row-span-3">
@@ -218,7 +218,7 @@ import Brev from "../components/Brev.astro";
                     height="348"
                     loading="lazy"
                     decoding="async"
-                    class="animate__animated animate__headShake animate__infinite animate__slower"
+                    class="animate__animated animate__headShake animate__infinite animate__slower z-20"
                   />
                 </div>
               </div>
@@ -281,7 +281,7 @@ import Brev from "../components/Brev.astro";
                     height="348"
                     loading="lazy"
                     decoding="async"
-                    class="animate__animated animate__slideInRight animate__slower"
+                    class="fotoinview2"
                   />
                 </div>
                 <div class="col-start-11 col-span-6 row-start-1 row-span-3">
@@ -515,4 +515,16 @@ import Brev from "../components/Brev.astro";
 <script>
   import { animate, stagger, inView, scroll } from "motion";
   scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+
+
+  animate( "body", { opacity: [ 0, 1] }, { duration: 2 })
+
+inView( ".fotoinview" , () =>{
+	animate( ".fotoinview", { x: [-2000, 0 ] }, { duration: 3 })
+	})
+
+	inView( ".fotoinview2" , () =>{
+	animate( ".fotoinview2", { x: [2000, 0 ] }, { duration: 2 })
+	})
 </script>
+
