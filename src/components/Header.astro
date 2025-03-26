@@ -15,30 +15,35 @@ import Button2 from "../components/Button2.astro";
         <nav id="desktopmenu" class="hidden lg:block">
             <ul class="flex flex-row gap-8">
                 <li class="text-center py-2 border-y-2">
-                    <Link href="#kapitler" variant="secondary" size="large"
-                        >Hvad er plastikforurening?</Link>
+                    <Link href="#section1" variant="secondary" size="large"
+                        >Hvad er plastikforurening?</Link
+                    >
                 </li>
                 <li class="text-center py-2 border-y-2">
-                    <Link href="#anmeldelser" variant="secondary" size="large"
-                        >Hvad er problemet med plastikforurening?</Link>
+                    <Link href="#section2" variant="secondary" size="large"
+                        >Hvad er problemet med plastikforurening?</Link
+                    >
                 </li>
                 <li class="text-center py-2 border-y-2">
-                    <Link href="#billeder" variant="secondary" size="large"
-                        >Hvad kan vi gøre?</Link>
+                    <Link href="#section3" variant="secondary" size="large"
+                        >Hvad kan vi gøre?</Link
+                    >
                 </li>
                 <li class="text-center py-2 border-y-2">
-                    <Link href="#forfatteren" variant="secondary" size="large"
-                        >Vidste du at?</Link>
+                    <Link href="#section4" variant="secondary" size="large"
+                        >Vidste du at?</Link
+                    >
                 </li>
                 <li class="text-center py-2 border-y-2">
-                    <Link href="#forfatteren" variant="secondary" size="large"
-                        >Hvad gør plastic change</Link>
+                    <Link href="#section5" variant="secondary" size="large"
+                        >Hvad gør plastic change</Link
+                    >
                 </li>
             </ul>
         </nav>
         <button
             id="burgermenu"
-            class="lg:hidden text-2xl relative inline-block text-black after:block after:w-0 after:h-[2px] after:bg-red-800 after:transition-all after:duration-300 hover:after:w-full"
+            class="lg:hidden text-2xl relative inline-block text-plasticpink after:block after:w-0 after:h-[2px] after:bg-babyblue after:transition-all after:duration-300 hover:after:w-full"
             x-on:click="showmenu = ! showmenu">Menu</button
         >
     </div>
@@ -52,24 +57,29 @@ import Button2 from "../components/Button2.astro";
     >
         <ul>
             <li class="text-center py-2 border-y-2">
-                <Link href="#kapitler" variant="secondary" size="large"
-                    >Hvad er plastikforurening?</Link>
+                <Link href="#section1" variant="secondary" size="large"
+                    >Hvad er plastikforurening?</Link
+                >
             </li>
             <li class="text-center py-2 border-y-2">
-                <Link href="#anmeldelser" variant="secondary" size="large"
-                    >Hvad er problemet med plastikforurening?</Link>
+                <Link href="#section2" variant="secondary" size="large"
+                    >Hvad er problemet med plastikforurening?</Link
+                >
             </li>
             <li class="text-center py-2 border-y-2">
-                <Link href="#billeder" variant="secondary" size="large"
-                    >Hvad kan vi gøre?</Link>
+                <Link href="#section3" variant="secondary" size="large"
+                    >Hvad kan vi gøre?</Link
+                >
             </li>
             <li class="text-center py-2 border-y-2">
-                <Link href="#forfatteren" variant="secondary" size="large"
-                    >Vidste du at?</Link>
+                <Link href="#section4" variant="secondary" size="large"
+                    >Vidste du at?</Link
+                >
             </li>
             <li class="text-center py-2 border-y-2">
-                <Link href="#forfatteren" variant="secondary" size="large"
-                    >Hvad gør plastic change</Link>
+                <Link href="#section5" variant="secondary" size="large"
+                    >Hvad gør plastic change</Link
+                >
             </li>
         </ul>
     </nav>
