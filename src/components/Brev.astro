@@ -2,79 +2,41 @@
 import Button2 from "./Button2.astro";
 import Button from "./Button.astro";
 ---
-
-<div class="p-8 max-w-xl mx-auto bg-darkblue shadow-lg rounded-lg">
-  <h2 class="flex justify-center text-2xl text-plasticpink poppins-semibold mb-6">
-    Tilmeld dig vores nyhedsbrev
-  </h2>
-
-  <form>
-    <!-- Fornavn og Etternavn -->
-    <div class="mb-6 flex gap-4">
-      <div class="w-full">
-        <label
-          for="first-name"
-          class="block text-sm poppins-medium text-eggs mb-2"
-        >
-          Fornavn
-        </label>
-        <input
-          id="first-name"
-          type="text"
-          name="first-name"
-          placeholder="Indtast fornavn"
-          class="w-full p-4 border poppins-regular border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-plasticpink"
-          required
-        />
-      </div>
-      <div class="w-full">
-        <label
-          for="last-name"
-          class="block text-sm poppins-medium text-eggs mb-2"
-        >
-          Efternavn
-        </label>
-        <input
-          id="last-name"
-          type="text"
-          name="last-name"
-          placeholder="Indtast efternavn"
-          class="w-full p-4 border poppins-regular border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-plasticpink"
-          required
-        />
-      </div>
+<div class="card w-96 bg-base-100 shadow-sm">
+  <div class="card-body">
+    <span class="badge badge-xs badge-warning">Most Popular</span>
+    <div class="flex justify-between">
+      <h2 class="text-3xl font-bold">Premium</h2>
+      <span class="text-xl">$29/mo</span>
     </div>
-
-    <!-- E-mail input -->
-    <div class="mb-6">
-      <label for="email" class="block text-sm poppins-medium text-eggs mb-2">
-        E-mail
-      </label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-        placeholder="Indtast din e-mail"
-        class="w-full p-4 border poppins-regular border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-plasticpink"
-        required
-      />
+    <ul class="mt-6 flex flex-col gap-2 text-xs">
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+        <span>High-resolution image generation</span>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+        <span>Customizable style templates</span>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+        <span>Batch processing capabilities</span>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+        <span>AI-driven image enhancements</span>
+      </li>
+      <li class="opacity-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+        <span class="line-through">Seamless cloud integration</span>
+      </li>
+      <li class="opacity-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+        <span class="line-through">Real-time collaboration tools</span>
+      </li>
+    </ul>
+    <div class="mt-6">
+      <button class="btn btn-primary btn-block">Subscribe</button>
     </div>
-
-    <!-- Checkbox -->
-    <div class="mb-6 flex items-center">
-      <input
-        id="newsletter-checkbox"
-        type="checkbox"
-        name="newsletter"
-        class="h-5 w-5 text-[#EB3858] border-gray-300 rounded-full focus:ring-2 focus:ring-plasticpink"
-        required
-      />
-      <label for="newsletter-checkbox" class="text-eggs ml-2 text-xs poppins-extralight">
-        Jeg giver mit samtykke til, at Plastic Change må opbevare og behandle mine oplysninger til brug i forbindelse med min støtte. Læs mere om dette samtykke i vores privatlivspolitik.
-      </label>
-    </div>
-
-    <!-- Submit Button -->
-     <Button2 variant="secondary", size="medium">Tilmeld nyhedsbrev</Button2>
-  </form>
+  </div>
 </div>
